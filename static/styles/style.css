@@ -1,0 +1,288 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(to right, #003D74 0%, #50aae6 40%, #50aae6 60%, #003D74 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-width: 640px;
+    text-align: center;
+}
+
+.home {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* div.logo {
+    align-self: center;
+    width: auto;
+    height: 100vh;
+} */
+
+img.logo {
+    /* display: block; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: auto;
+    height: 70vh;
+    animation: fadeInLogo 0.4s ease-in-out forwards;
+    animation-delay: .2s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+}
+
+h1.logo {
+    font-family: "Gabriela", serif;
+    font-size: 7vh;
+    /* font-size: 8vw; */
+    margin: auto;
+    padding-top: 40vh;
+    margin-bottom: 1vh;
+    letter-spacing: .1vh;
+    font-weight: 400;
+    color: black;
+    animation: fadeIn 0.4s ease-in-out forwards;
+    animation-delay: .2s;
+    opacity: 0;
+    width: 70%;
+}
+
+h4.sublogo {
+    font-family: "Poiret One", sans-serif;
+    font-size: 4vh;
+    /* font-size: 1.6vw; */
+    margin: 0;
+    margin-bottom: 8vh;
+    letter-spacing: 0;
+    font-weight: 800;
+    color: black;
+    animation: slideInFromBottom 0.4s ease-in-out forwards;
+    animation-delay: .4s;
+    opacity: 0;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInLogo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    height: 8vh;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    animation: fadeIn 0.4s ease-in-out forwards;
+    animation-delay: .8s;
+    opacity: 0;
+    background-color: #003D74;
+}
+
+header.dark {
+    background-color: #003D74;
+}
+
+logo {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4%;
+}
+
+div.headerlogo {
+    margin: auto;
+}
+
+img.headerlogo {
+    height: 4vh;
+    width: auto;
+    margin-right: 4vh;
+}
+
+.navigation {
+    margin: auto;
+    margin-top: 0.4%;
+    margin-bottom: 0.4%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 64%;
+}
+
+.navigationlink {
+    font-family: "Gabriela", serif;
+    text-decoration: none;
+    margin: auto;
+    letter-spacing: .16vh;
+    font-weight: 100;
+    color: #a4bfd7;
+}
+
+footer {
+    background-color: rgb(40, 40, 40);
+    min-height: 8vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    font-family: "Poiret One", sans-serif;
+    font-size: 2vh;
+    margin: auto;
+    color: white;
+}
+
+#map{
+    background-color: whitesmoke;
+}
+
+.map{
+    width: 100vw;
+    height: 70vh;
+    margin: 4vh auto;
+}
+
+h2 {
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+    font-family: "Gabriela", serif;
+    font-size: 6vh;
+    margin: 0;
+    letter-spacing: 0;
+    font-weight: 100;
+    color: black;
+    /* opacity: 1;
+    transform: translateY(100%);
+    transition: opacity 0.4s, transform 0.4s; */
+}
+
+.dynamic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.person {
+    width: 400px;
+    height: auto;
+    text-align: left;
+    background-color: white;
+    border-radius: 4vh;
+    margin: 4vh auto;
+    padding: 1vh;
+}
+
+.photo {
+    width: 400px;
+    height: auto;
+    border-radius: 3vh;
+    padding-bottom: 1vh;
+}
+
+h3 {
+    font-family: "Gabriela", serif;
+    font-size: 2vh;
+    margin: auto;
+    color: black;
+}
+
+h4 {
+    font-family: "Poiret One", sans-serif;
+    font-size: 2vh;
+    margin: auto;
+    color: black;
+    font-weight: 800;
+}
+
+.person p, .person a{
+    font-family: "Poiret One", sans-serif;
+    font-size: 2vh;
+    margin: auto;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about {
+    width: 70%;
+    font-family: "Poiret One", sans-serif;
+    font-size: 2.4vh;
+    margin: auto;
+    color: black;
+    font-weight: 600;
+}
